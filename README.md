@@ -52,3 +52,9 @@ A full list of bedtools commands can be found [here](https://bedtools.readthedoc
 
 Alright, now lets try out some bedtool commands.
 
+1. First lets download some BED files. Download two h3k27ac CHIP-seq bed narrowPeak files from different tissue types from the [encodeproject.org](https://www.encodeproject.org).
+2. After downloading, compare the two bed files. What sequences do they share in common? What sequences are unique?
+3. Lets say we want to find the overlapping regions of these two bed files. However, we only want the overlapping sequence which is longest between the two samples. For example, if one BED file has a region of `chr1	1	10` and another has a region of `chr1	5	20`, only output the second interval since it is the longest.
+4. We want to find enhancers specific to a single tissue type. How would you go about doing so? Try and create a reasonable list of enhancers specific to a single tissue type from BED files from ENCODE.
+5. Nice, now we have a list of putative enhancers. One common method of identifying enhancers is via level of conservation. How conserved are your enhancers? Convert your BED sequences to another species genome library using [liftover](https://genome.ucsc.edu/cgi-bin/hgLiftOver). Then, try finding overlaps between these converted regions and a downloaded set of h3k27ac peaks from ENCODE for your interested tissue type and species you are comparing it to. eg. If you have a list of enhancers in human lung tissue aligned to hg19, convert it to mm9 and compare it to h3k27ac peaks in mouse lung tissue also aligned to mm9.
+6. Which of these enhancers occur in intronic regions?
