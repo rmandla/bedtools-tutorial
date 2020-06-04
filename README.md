@@ -53,7 +53,7 @@ A full list of bedtools commands can be found [here](https://bedtools.readthedoc
 
 Alright, now lets try out some bedtool commands.
 
-1. First lets download some BED files. Download two h3k27ac CHIP-seq bed narrowPeak files from different tissue types from the [encodeproject.org](https://www.encodeproject.org).
+1. First lets download some BED files. Download two h3k27ac CHIP-seq bed narrowPeak files from different tissue types of the same species and genomic library (hg19, mm9, ...) from the [encodeproject.org](https://www.encodeproject.org).
 2. After downloading, compare the two bed files. What sequences do they share in common? What sequences are unique?
 3. Lets say we want to find the overlapping regions of these two bed files. However, we only want the overlapping sequence which is longest between the two samples. For example, if one BED file has a region of `chr1	1	10` and another has a region of `chr1	5	20`, only output the second interval since it is the longest.
 4. We want to find enhancers specific to a single tissue type. How would you go about doing so? Try and create a reasonable list of enhancers specific to a single tissue type from BED files from ENCODE.
