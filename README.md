@@ -14,7 +14,7 @@ Because BED files do not have any official specification, the data per column is
 2. Column 2 must always contain the start coordinate
 3. Column 3 must always contain the end coordinate. This end value is non-inclusive
 
-Besides these 3 columns, additional columns of other information can be inputted at the discretion of the user. However, in general the column descriptions popularised by the UCSC genome browser are recommended but not required (see the descriptions [here](https://en.wikipedia.org/wiki/BED_(file_format)#Description).
+Besides these 3 columns, additional columns of other information can be inputted at the discretion of the user. However, in general the column descriptions popularised by the UCSC genome browser are recommended but not required (see the descriptions [here](https://en.wikipedia.org/wiki/BED_(file_format)#Description)).
 
 BED files are often used to list important genomic positions in a smaller format than including positions and sequence data in Fasta, BigWig, BAM/SAM/CRAM, and other such formats. They are incredibly useful for highlighting specific regions of a genome or for inputting into other software packages to get greater information on the described genomic region. For example, a list of putative enhancers can be denoted in a BED file as such:
 
