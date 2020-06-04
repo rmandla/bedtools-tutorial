@@ -19,6 +19,7 @@ Besides these 3 columns, additional columns of other information can be inputted
 BED files are often used to list important genomic positions in a smaller format than including positions and sequence data in Fasta, BigWig, BAM/SAM/CRAM, and other such formats. They are incredibly useful for highlighting specific regions of a genome or for inputting into other software packages to get greater information on the described genomic region. For example, a list of putative enhancers can be denoted in a BED file as such:
 
 `chr1	18537	18754	enhancer1`
+
 `chr2	7583726	7594726	enhancer2`
 
 NOTE these BED files are completely different from BED files used in the PLINK software package. Computational biology file formats are disgusting :'(.
